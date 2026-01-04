@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Parallel-Groups-Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="methods" name="Group2_Run(failed)">
+    <groups>
+      <run>
+        <include name="group2"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.Tests.SupplierMasterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="loginGroup"/>
+          <include name="logoutGroup"/>
+          <include name="verifySaveDataWithInvalidEmailIdInCostingShouldNotBeSaved"/>
+          <include name="VerifyPlaceholderNameIsVisibleOrnotWithoutAnyEntryForSupplierName"/>
+          <include name="VerifyPopMessageForSpecialCharacterInSupplierCode"/>
+          <include name="VerifyPlaceholderNameIsVisibleOrnotWithoutAnyEntry"/>
+          <include name="VerifyPlaceholderNameIsVisibleOrnotWithoutAnyEntryForSupplierLocation"/>
+          <include name="verifyUserDataSaveAsItIsInSupplierListOrNot"/>
+          <include name="setUp"/>
+          <include name="verifyAfterClickingEditButtonAllDataEnterASWellInParticularBoxOrNot"/>
+          <include name="VerifyEditAndRestButtonToCheckNewEntriesAreSavedOrNot"/>
+          <include name="verifyLengthTableInSupplierPage"/>
+        </methods>
+      </class> <!-- com.Tests.SupplierMasterTest -->
+      <class name="com.Tests.ProcessMasterTest">
+        <methods>
+          <include name="TC_011_verifyProcessRateContainSpecialCharacter"/>
+          <include name="TC_025_verifyCloseButtonRedirectsToProcessMasterMainPage"/>
+          <include name="TC_012_verifyExportFileAndValidateWithProcessName"/>
+          <include name="TC_026_verifyNextButtonIsWorkingOrNot"/>
+          <include name="logoutGroup"/>
+          <include name="loginGroup"/>
+          <include name="TC_030_verifyProcessListShouldNotDeleteRestrictionOnUsedProcess"/>
+          <include name="TC_029_validateSaveButtonDisableAfterSuccessfullySave"/>
+          <include name="TC_010_verifyProcessRateDoesNotContainMoreThanSixDigit"/>
+          <include name="tearDown"/>
+          <include name="TC_015_verifyPositiveEntryWithCustomerSpecificDeltaValidation"/>
+          <include name="TC_028_validateIButtonInProcessMasterDisplaysTooltipHelpMessage01"/>
+          <include name="TC_022_importExcelFileWithoutProcessNameWithSupplier"/>
+          <include name="setUp"/>
+          <include name="TC_027_editCustomerSpecificProcessAndValidate"/>
+          <include name="TC_009_verifyPopWhenUserClickExportButtonWithoutSelectingCustomerAndSupplier"/>
+        </methods>
+      </class> <!-- com.Tests.ProcessMasterTest -->
+    </classes>
+  </test> <!-- Group2_Run(failed) -->
+  <test thread-count="3" parallel="methods" name="Group1_Run(failed)">
+    <groups>
+      <run>
+        <include name="group1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.Tests.SupplierMasterTest">
+        <methods>
+          <include name="verifyBusinessDomainSegmentLengthtable"/>
+          <include name="verifyBusinessDomainSegmentLengthFOrFifty"/>
+          <include name="verifyCostingCouldNotDeleteWithBusinessDOmain"/>
+          <include name="verifyEnterDataWithBusinesssegment"/>
+          <include name="verifyEditButtonIsWorkingOrNotWithBusinessDomain"/>
+          <include name="verifyBusinessDomainSegmentLengthFOrSeventyFive"/>
+          <include name="verifyDuplicateDataWithBusinessBomainissavedornot"/>
+          <include name="verifyNextButtonIsClickableOrNot"/>
+          <include name="tearDown"/>
+          <include name="loginGroup"/>
+          <include name="logoutGroup"/>
+          <include name="setUp"/>
+          <include name="verifyDuplicateDataWithBusinessSegmentSavedOrNot"/>
+          <include name="verifyEnterDataWithBusinessDomain"/>
+        </methods>
+      </class> <!-- com.Tests.SupplierMasterTest -->
+      <class name="com.Tests.ProcessMasterTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="TC_002VerifyErrorMessageShouldBeGeneratedWhenProcessRateIsMissing"/>
+          <include name="TC_001verifyProcessDetailSaved"/>
+          <include name="TC_006_verifyResetButton"/>
+          <include name="TC_007_verifyAddNewCustomerData"/>
+          <include name="setUp"/>
+          <include name="loginGroup"/>
+          <include name="logoutGroup"/>
+          <include name="TC_004_verifyErrorMessageWhenEfficiencyIsMoreThan100"/>
+          <include name="TC_003_verifyErrorMessageInCorrectValueInProcessRate"/>
+          <include name="TC_005_verifyDateFieldsContainsTodaysDate"/>
+          <include name="TC_008_verifyExistingDataShouldBeSaveAsNewAfterEnterNewProcessDetails"/>
+        </methods>
+      </class> <!-- com.Tests.ProcessMasterTest -->
+    </classes>
+  </test> <!-- Group1_Run(failed) -->
+  <test thread-count="3" parallel="methods" name="Group3_Run(failed)">
+    <groups>
+      <run>
+        <include name="group3"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.Tests.SupplierMasterTest">
+        <methods>
+          <include name="VerifySupplierAllocationInOHPMaster"/>
+          <include name="verifyExportExcelFileAndValidateWithUIData"/>
+          <include name="verifyNextButtonIsWorkingProperlyOrNot"/>
+          <include name="VerifySupplierMasterDoesNotSaveWithoutSelectiongSupplierName"/>
+          <include name="verifySortingButtonIsWorkingInSupplierLocation"/>
+          <include name="tearDown"/>
+          <include name="logoutGroup"/>
+          <include name="loginGroup"/>
+          <include name="verifySortingButtonIsWorkingInBusinessDomain"/>
+          <include name="verifySortingButtonIsWorkingInBusinessSegment"/>
+          <include name="verifyTestSortingBySupplierName"/>
+          <include name="verifySupplierMasterDoesNotSaveWithoutSelectingSupplierLocation"/>
+          <include name="setUp"/>
+          <include name="verifysupplierMasterDoesNotSaveWithoutSelectingBusinessDomain"/>
+          <include name="verifyPopUpWhenUserChooseInvalidPhoto"/>
+          <include name="importnewexcelfile"/>
+        </methods>
+      </class> <!-- com.Tests.SupplierMasterTest -->
+      <class name="com.Tests.ProcessMasterTest">
+        <methods>
+          <include name="TC_038_verifyAddSupplierViaPopup"/>
+          <include name="TC_035_verifySaveProcessWithSupplierSpecificPositiveValueDeltaOnly"/>
+          <include name="TC_048_VerifyMandatoryFieldWithoutUnitDropdown"/>
+          <include name="TC_043_VerifyDefaultsValuesShouldBeShowInExportedProcessSheetWithSupplier"/>
+          <include name="TC_040_duplicateCustomerShouldNotSaveMultipleTimes"/>
+          <include name="TC_034_verifySaveProcessWithSupplierSpecificDeltaOnly"/>
+          <include name="TC_046_VerifymandatoryfieldsValidationOnSaveWithoutProcessName"/>
+          <include name="TC_044_VerifyDefaultsInCustomerExportedProcessSheet"/>
+          <include name="TC_042_verifyCustomerSelectedListAndNumberOfDeltaPopulation"/>
+          <include name="TC_018_verifyImportNewDataWithSupplier"/>
+          <include name="TC_024_verifyDropdownPlaceholderShouldBeShownSelectWithoutSelectingAnyValues"/>
+          <include name="TC_032_verifyInvalidCharacterEfficiencyShouldNotContain"/>
+          <include name="TC_049_VerifyMandatoryFieldWithoutRm"/>
+          <include name="TC_041_verifyViewButtonWorkingWellOrNot"/>
+          <include name="TC_020_verifyClickControlMasterForUnselectSaleCheckBoxToHideCustomerColumnFromProcessMasterPage"/>
+          <include name="TC_050_VerifySaveNewProcessWithoutSelectingSupplierAndCustomer"/>
+          <include name="TC_051_verifyManualInstructionWhichExistAtRightSideOnTop"/>
+          <include name="logoutGroup"/>
+          <include name="loginGroup"/>
+          <include name="TC_023_importExcelFileWithoutUnitDropdownShouldNotSaveWithSupplier"/>
+          <include name="TC_017_verifyAllCheckboxesIsClicked"/>
+          <include name="TC_019_verifyImportNewDataWithCustomer"/>
+          <include name="TC_047_VerifyMandatoryFieldValidationOnSaveWithoutProcessRate"/>
+          <include name="TC_033_verifyNumberOfDeltaPopulationIsVerifiedToSupplierCheckbox"/>
+          <include name="tearDown"/>
+          <include name="TC_036_verifySaveProcessWithSupplierSpecificNegativeValueDeltaOnly"/>
+          <include name="TC_045_verifySaveAsNewSupplierDeltaProcess"/>
+          <include name="TC_039_duplicateProcessDoesNotSaveWithSameSupplierMultipleTimes"/>
+          <include name="setUp"/>
+          <include name="TC_031_verifyProcessMasterOpenInstantly"/>
+          <include name="TC_021_verifyClickUnselectSupplierCheckBoxInControlMasterToHideSupplierColumnFromProcessMasterPage"/>
+          <include name="TC_037_verifyEditSupplierDeltaProcess"/>
+          <include name="TC_016_verifyNegativeEntryWithCustomerSpecificDelta"/>
+        </methods>
+      </class> <!-- com.Tests.ProcessMasterTest -->
+    </classes>
+  </test> <!-- Group3_Run(failed) -->
+</suite> <!-- Failed suite [Parallel-Groups-Suite] -->
