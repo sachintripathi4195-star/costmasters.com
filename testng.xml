@@ -1,0 +1,17 @@
+<suite name="Parallel Suite" parallel="tests" thread-count="2">
+ 
+    <test name="SupplierRun" group-by-instances="true">
+<classes>
+<class name="com.Tests.SupplierMasterTest"/>
+</classes>
+</test>
+ 
+    <test name="ProcessRun" group-by-instances="true">
+<classes>
+<class name="com.Tests.ProcessMasterTest"/>
+</classes>
+</test>
+ 
+</suite>
+
+ 

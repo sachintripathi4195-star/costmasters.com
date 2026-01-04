@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="17" total="18" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-24T16:19:13 IST" name="Default suite" finished-at="2025-04-24T16:19:30 IST" duration-ms="16470">
+    <groups>
+      <group name="group2">
+        <method signature="CustomerMasterTest.VerifyPopMessageForSpecialCharacterInCustomerCode()[pri:19, instance:com.Tests.CustomerMasterTest@6b2e0f78]" name="VerifyPopMessageForSpecialCharacterInCustomerCode" class="com.Tests.CustomerMasterTest"/>
+      </group> <!-- group2 -->
+    </groups>
+    <test started-at="2025-04-24T16:19:13 IST" name="Default test" finished-at="2025-04-24T16:19:30 IST" duration-ms="16470">
+      <class name="com.Tests.CustomerMasterTest">
+        <test-method is-config="true" signature="loginGroup()[pri:0, instance:com.Tests.CustomerMasterTest@6b2e0f78]" started-at="2025-04-24T16:19:13 IST" name="loginGroup" finished-at="2025-04-24T16:19:21 IST" duration-ms="7163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginGroup -->
+        <test-method signature="VerifyPopMessageForSpecialCharacterInCustomerCode()[pri:19, instance:com.Tests.CustomerMasterTest@6b2e0f78]" started-at="2025-04-24T16:19:21 IST" name="VerifyPopMessageForSpecialCharacterInCustomerCode" finished-at="2025-04-24T16:19:30 IST" duration-ms="8994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyPopMessageForSpecialCharacterInCustomerCode -->
+        <test-method is-config="true" signature="logoutGroup()[pri:0, instance:com.Tests.CustomerMasterTest@6b2e0f78]" started-at="2025-04-24T16:19:30 IST" name="logoutGroup" finished-at="2025-04-24T16:19:30 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutGroup -->
+      </class> <!-- com.Tests.CustomerMasterTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

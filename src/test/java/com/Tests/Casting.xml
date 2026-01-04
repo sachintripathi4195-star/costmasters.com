@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Casting_Alloy_Test_Suite" parallel="methods" thread-count="25">
+
+    <test name="Casting_Alloy_Automation">
+        <groups>
+            <run>
+                <include name="group1" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.Tests.Casting_AlloyTest" />
+        </classes>
+
+    </test>
+
+</suite>
